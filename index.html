@@ -1,0 +1,326 @@
+<!DOCTYPE>
+<html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    
+    <title>Jennifer Cremer</title>
+	
+    
+   <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="js/universal.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    
+        <br>
+    <div class="row row-space my-auto">
+      <div class="col-sm-1 col-lg-3"></div>
+
+
+      <div class="col-sm-4 col-lg-2">
+        <img class="img-center img-thumbnail rounded-circle mx-auto d-block" src="images/headshot_temp.jpg" style="margin-top: 10px; margin-bottom: 10px">
+      </div> 
+
+      <div class="col-sm-6 col-lg-4 my-auto mx-auto">
+        <h1 class="text-dark text-left">About Me</h1>
+        <p class="text-dark text-left">I am a PhD student in Computer Science - Graphics and Visualization, at the University of Florida. I work in the <a href="https://www.cise.ufl.edu/research/SurfLab/">SurfLab</a> under the supervision of Dr. Jorg Peters. My current work focuses on human perception of complex 3D data sets (specifically medical imagry) in virtual reality, to both enhance spatial reasoning about the given structures and provide fast, yet accurate reconstructions without specialized software training.</p>
+
+        <p class="text-dark text-left">When I'm not in the lab I can often be found either teaching CIS4930 - Design Patters or acting as Lead TA for COP4600 - Operating Systems under the direction of <a href="jeremiahblanchard.org">Dr. Jeremiah Blanchard</a>, among other courses.</p>
+        
+        <p class="text-dark text-left"> I graduated in Spring 2018 from the University of Florida with a Bachelor of Science degree in Digital Arts and Sciences with a personal focus on applied physics elevectives like Fluid Mechanics.</p>
+        <br>
+      </div>
+
+
+      <div class="col-sm-1 col-lg-3"></div>
+    </div>
+
+    <div class="container-fluid bg-dark">
+    <!-- <a class="navbar-light" href="#"><img src="img/name.png" height="90%" width="90%"></a> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <a class="nav-link js-scroll-trigger" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+        </li>
+            <!-- <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#">Blog</a>
+            </li> -->
+        <li class="nav-item js-scroll-trigger">
+            <a class="nav-link" href="#connect">Connect</a>
+        </li>
+        </ul>
+    </div>
+    </div>
+    </nav>
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+	<li data-target="#slides" data-slide-to="2"></li>
+    <li data-target="#slides" data-slide-to="3"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+	  <img src="img/climb1.jpg">
+	  <div class="carousel-caption">
+		  <h1 class="display-2">Tyler Maiello</h1>
+		  <h3>4th Year Computer Science Major, University of Florida</h3>
+		  <h3>Software Engineer Intern, JP Morgan & Chase Co</h3>
+		  <a href="#about" class="btn btn-primary">About Me</a>
+	  </div>
+    </div>
+    <div class="carousel-item">
+	  	<!-- <img src="img/family.jpg"> -->
+	  	<div class="carousel-caption">
+			<h1 class="display-2">Tyler Maiello</h1>
+			<h3>4th Year Computer Science Major, University of Florida</h3>
+			<h3>Software Engineer Intern, JP Morgan & Chase Co</h3>
+			<a href="#about" class="btn btn-primary">About Me</a>
+		</div>
+    </div>
+    <div class="carousel-item">
+		<!-- <img src="img/bandagang.jpg"> -->
+		<div class="carousel-caption">
+			<h1 class="display-2">Tyler Maiello</h1>
+			<h3>4th Year Computer Science Major, University of Florida</h3>
+			<h3>Software Engineer Intern, JP Morgan & Chase Co</h3>
+			<a href="#about" class="btn btn-primary">About Me</a>
+		</div>
+	</div>
+    <div class="carousel-item">
+		<!-- <img src="img/pumpkin.JPG"> -->
+		<div class="carousel-caption">
+			<h1 class="display-2">Tyler Maiello</h1>
+			<h3>4th Year Computer Science Major, University of Florida</h3>
+			<h3>Software Engineer Intern, JP Morgan & Chase Co</h3>
+			<a href="#about" class="btn btn-primary">About Me</a>
+		</div>
+	</div>
+  </div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+	<div class="row jumbotron">
+		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+			<!-- <p class="lead">Placeholder</p> -->
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+			<!-- <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Web Hosting</button></a> -->
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!--- About Me -->
+<div class="container-fluid padding" id="about">
+	<div class="row welcome text-center">
+		<div class="col-12">
+			<h1 class="display-4">About Me</h1>
+		</div>
+		<hr>
+		<div class="col-12">
+			<p class="lead">Hi! I'm Tyler Maiello, I'm a fourth year Computer Science major at the University of Florida. Former Software Engineering Program Intern at JP Morgan & Chase Co. Welcome to my site!</p>
+			<p>
+				
+			</p>
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12" id="resume">
+			<h1 class="display-4">Resume</h1>
+			<h6>This uses your browser's embedded PDF viewer. (May have issues on mobile)</h6>
+			<hr>
+			<!-- <p>insert pdf viewer</p> -->
+			<!-- <embed src= "Tyler_Maiello_Resume.pdf" width= "500" height= "375"> -->
+			<!-- <object data="Tyler_Maiello_Resume.pdf" type="application/pdf" width="100%" height="900px" min-width=90%>
+			</object> -->
+			<iframe src="Tyler_Maiello_Resume.pdf" width=100% height="900px"></iframe>
+			<br>
+			<a href="Tyler_Maiello_Resume.pdf" class="btn btn-primary">View in Own Window</a>
+		</div>
+		<div class="col-lg-6">
+			<!-- <img src="img/emmaandme.jpg" class="img-fluid"> -->
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+  
+<!--- Personal Projects -->
+<div class="container-fluid padding">
+	<div class="row welcome text-center">
+		<div class="col-12" id="projects">
+			<h1 class="display-4">Personal Projects</h1>
+		</div>
+		<hr>
+	</div>
+</div>
+
+<!--- Cards of Projects -->
+<div class="container-fluid padding">
+	<div class="row padding">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/rotmg.png">
+				<div class="card-body">
+					<h4 class="card-title">RotMG Damage Calculator</h4>
+					<p class="card-text">This App is my take on a damage calculator for RotMG since the popular one a lot of people used is on flash</p>
+					<a href="https://github.com/tmaiello/rotmg-damage-calc" class="btn btn-outline-secondary">See Github</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/peng.png">
+				<div class="card-body">
+					<h4 class="card-title">Herp/Peng Test</h4>
+					<p class="card-text">This test suite it built to facilitate testing of student projects by teachers according to a predefined specification.</p>
+					<a href="https://github.com/tmaiello/herptest" class="btn btn-outline-secondary">See Github</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" src="img/unnamed.png">
+				<div class="card-body">
+					<h4 class="card-title">Pomodoro Spotify Timer</h4>
+					<p class="card-text">Pomodoro is a studying method that promotes shorter burst intervals of working, with strategically placed breaks for increased efficiency. This application integrates the strategy with popular music streaming service Spotify.</p>
+					<a href="https://github.com/emma-andrews/pomodoro" class="btn btn-outline-secondary">See Github</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>	
+
+<!--- Connect -->
+<div class="container-fluid padding">
+	<div class="row text-center padding"id="connect">
+		<div class="col-12">
+			<h2>Connect</h2>
+		</div>
+		<div class="col-12 social padding">
+        <h4 class="text-dark text-left">Contact Info</strong></h4>
+        <h5 class="text-dark text-left">Email: <a href="mailto:jennifercremer@gmail.com"target="_blank"><i class="fab fa-google"></i></a></h5>
+        <h5 class="text-dark text-left">Facebook: <a href="https://www.facebook.com/FerbysSouls"target="_blank"><i class="fab fa-facebook"></i></a></h5>
+        <h5 class="text-dark text-left">Instagram: <strong>@ferbyc</strong></h5>
+		<h5 class="text-dark text-left">LinkedIn: <a href="https://www.linkedin.com/in/jennifer-cremer/"target="_blank"><i class="fab fa-linkedin"></i></a></h5>
+		<h5 class="text-dark text-left">Github: <a href="https://github.com/ferbycremer"target="_blank"><i class="fab fa-github"></i></a></h5>
+		</div>
+	</div>
+</div>
+
+<hr class="my-4">
+<!--- Fixed background -->
+<figure>
+	<div class="fixed-wrap">
+		<div id="fixed">
+		</div>
+	</div>
+</figure>
+
+<!--- Footer -->
+<footer>
+	<div class="container-fluid padding">
+		<div class="row text-center">
+			<div class=col-md-4>
+				<!-- empty for spacing? -->
+			</div>
+			<div class=col-md-4>
+				<img src="img/name.png">
+				<hr class="light">
+				<p>jennifercremer@gmail.com</p>
+                <p>jcremer3@ufl.edu</p>
+				<p>University of Florida</p>
+				<p>Gainesville, Florida</p>
+			</div>
+		</div>
+	</div>
+
+</footer>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/freelancer.min.js"></script>
+</body>
+</html>
