@@ -2,12 +2,11 @@ window.onload = function(){
 	var header = document.getElementById('header');
 	header.innerHTML = '\
     <div class="container-fluid">\
-    <a class="navbar-light" href="#"><img src="images/name.png" height="90%" width="90%"></a>\
+    <a class="navbar-light" href="index.html"><img src="images/name.png" height="90%" width="90%"></a>\
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">\
       <span class="navbar-toggler-icon"></span>\
     </button>\
     <div class="collapse navbar-collapse" id="navbarResponsive">\
-		<h1 class="text-light"><a href="index.html" class="text-light">Ferby Cremer</a></h1>\
 		<ul class="navbar-nav ml-auto">\
 	      <li class="nav-item">\
 	        <a class="nav-link" href="index.html">Home</a>\
