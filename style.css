@@ -197,3 +197,20 @@ Large (lg) devices (desktops, 992px and up)
 Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 */
+
+a{
+    color: #E28F41;
+  }
+  
+  a:hover{
+    color: #ffcea1;
+    text-decoration: none;
+  }
+  
+  .bg-blue{
+    background-color: #1c3045;
+  }
+  
+  .bg-grey{
+    background-color: #eeeeee;
+  }
