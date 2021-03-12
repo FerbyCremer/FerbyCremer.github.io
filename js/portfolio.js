@@ -1,7 +1,7 @@
 console.log("pictures")
 
 var gallery = document.getElementById('gallery');
-Promise.all([d3.json("./pictures/pic.json")]).then(
+Promise.all([d3.json("./Art_portfolio/pic.json")]).then(
   function(json){
   console.log(json)
   var innerHTML = ""

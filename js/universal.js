@@ -12,10 +12,10 @@ window.onload = function(){
 	    //     <a class="nav-link" href="index.html">Home</a>\
 	    //   </li>\
         <li class="nav-item">\
-          <a class="nav-link" href="art_portfolio.html">Art Portfolio</a>\
+          <a class="nav-link" href="art_portfolio.html">Art</a>\
         </li>\
 	      <li class="nav-item">\
-	        <a class="nav-link" href="research.html">Research</a>\
+	        <a class="nav-link" href="research-protected.html">Research</a>\
 	      </li>\
 	      <li class="nav-item">\
 	        <a class="nav-link" href="code_projects.html">Coding</a>\
