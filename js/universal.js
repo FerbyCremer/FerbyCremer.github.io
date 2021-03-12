@@ -1,6 +1,6 @@
-window.onload = function(){
-	var header = document.getElementById('header');
-	header.innerHTML = '\
+window.onload = function() {
+    var header = document.getElementById('header');
+    header.innerHTML = '\
     <div class="container-fluid">\
     <a class="navbar-light" href="index.html"><img src="images/name.png" height="90%" width="90%"></a>\
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">\
@@ -18,7 +18,7 @@ window.onload = function(){
 	        <a class="nav-link" href="research-protected.html">Research</a>\
 	      </li>\
 	      <li class="nav-item">\
-	        <a class="nav-link" href="code_projects.html">Coding</a>\
+	        <a class="nav-link" href="https://github.com/FerbyCremer">Coding</a>\
 	      </li>\
 	      <li class="nav-item">\
 	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\
@@ -33,8 +33,8 @@ window.onload = function(){
         </div>\
   </div>'
 
-	var footer = document.getElementById('footer');
-	footer.innerHTML = '\
+    var footer = document.getElementById('footer');
+    footer.innerHTML = '\
 	<div class="row row-space my-auto">\
       <div class="col-sm-12">\
         <h6 class="text-center mx-auto text-light">\
@@ -45,5 +45,5 @@ window.onload = function(){
       </div>\
     </div>'
 
-  console.log("loaded")
+    console.log("loaded")
 }
