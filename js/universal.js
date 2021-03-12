@@ -1,6 +1,12 @@
 window.onload = function(){
 	var header = document.getElementById('header');
 	header.innerHTML = '\
+    <div class="container-fluid">\
+    <a class="navbar-light" href="#"><img src="images/name.png" height="90%" width="90%"></a>\
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">\
+      <span class="navbar-toggler-icon"></span>\
+    </button>\
+    <div class="collapse navbar-collapse" id="navbarResponsive">\
 		<h1 class="text-light"><a href="index.html" class="text-light">Ferby Cremer</a></h1>\
 		<ul class="navbar-nav ml-auto">\
 	      <li class="nav-item">\
@@ -21,10 +27,12 @@ window.onload = function(){
           <li class="nav-item">\
 	        <a class="nav-link" href="fun.html">Hobbies</a>\
 	      </li>\
-          <li class="nav-item">\
+          <li class="nav-item js-scroll-trigger">\
             <a class="nav-link" href="#connect">Connect</a>\
 	      </li>\
-	    </ul>'
+	    </ul>\
+        </div>\
+  </div>'
 
 	var footer = document.getElementById('footer');
 	footer.innerHTML = '\
