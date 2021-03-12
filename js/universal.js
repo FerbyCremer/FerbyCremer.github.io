@@ -8,9 +8,9 @@ window.onload = function(){
     </button>\
     <div class="collapse navbar-collapse" id="navbarResponsive">\
 		<ul class="navbar-nav ml-auto">\
-	      <li class="nav-item">\
-	        <a class="nav-link" href="index.html">Home</a>\
-	      </li>\
+	    //   <li class="nav-item">\
+	    //     <a class="nav-link" href="index.html">Home</a>\
+	    //   </li>\
         <li class="nav-item">\
           <a class="nav-link" href="art_portfolio.html">Art Portfolio</a>\
         </li>\
