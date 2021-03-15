@@ -27,7 +27,7 @@ window.onload = function() {
 	        <a class="nav-link" href="fun.html">Hobbies</a>\
 	      </li>\
           <li class="nav-item">\
-            <a class="nav-link" href="index.html/#connect">Connect</a>\
+            <a class="nav-link" href="index.html">Connect</a>\
 	      </li>\
 	    </ul>\
         </div>\
