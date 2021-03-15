@@ -26,8 +26,8 @@ window.onload = function() {
           <li class="nav-item">\
 	        <a class="nav-link" href="fun.html">Hobbies</a>\
 	      </li>\
-          <li class="nav-item js-scroll-trigger">\
-            <a class="nav-link" href="#connect">Connect</a>\
+          <li class="nav-item">\
+            <a class="nav-link" href="index.html/#connect">Connect</a>\
 	      </li>\
 	    </ul>\
         </div>\
