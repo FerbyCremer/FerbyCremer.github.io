@@ -1,41 +1,49 @@
-console.log("pictures")
+window.onload = function() {
+    var header = document.getElementById('header');
+    header.innerHTML = '\
+    <div class="container-fluid">\
+    <a class="navbar-light" href="../index.html"><img src="../images/name.png" height="90%" width="90%"></a>\
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">\
+      <span class="navbar-toggler-icon"></span>\
+    </button>\
+    <div class="collapse navbar-collapse" id="navbarResponsive">\
+    <ul class="navbar-nav ml-auto">\
+        <li class="nav-item">\
+          <a class="nav-link" href="../index.html">Home</a>\
+        </li>\
+        <li class="nav-item">\
+          <a class="nav-link" href="../art_portfolio.html">Art</a>\
+        </li>\
+        <li class="nav-item">\
+          <a class="nav-link" href="../research-protected.html">Research</a>\
+        </li>\
+        <li class="nav-item">\
+          <a class="nav-link" href="https://github.com/FerbyCremer">Coding</a>\
+        </li>\
+        <li class="nav-item">\
+          <a class="nav-link" target="_blank" href="../files/CV.pdf">CV</a>\
+        </li>\
+          <li class="nav-item">\
+          <a class="nav-link" href="../fun.html">Hobbies</a>\
+        </li>\
+          <li class="nav-item">\
+            <a class="nav-link" href="../index.html">Connect</a>\
+        </li>\
+    </ul>\
+      </div>\
+    </div>'
 
-var gallery = document.getElementById('gallery');
-Promise.all([d3.json("./Art_portfolio/pic.json")]).then(
-  function(json){
-  console.log(json)
-  var innerHTML = ""
-  var path = "./Art_portfolio"
-  var rowStart = "<div class=\"row row-space my-auto\">"
-  var colStart = "<div class=\"col-sm-4\">"
-  var j = 0;
-  shuffleArray(json[0].images);
-    for(var i=json[0].images.length-1; i>=0; i--){
-        var name = json[0].images[i]
+    var footer = document.getElementById('footer');
+    footer.innerHTML = '\
+    <div class="row row-space my-auto">\
+    <div class="col-sm-12">\
+      <h6 class="text-center mx-auto text-light">\
+        <a class="text-light" href="https://ufl.edu">University of Florida</a> | \
+        <a class="text-light" href="https://cise.ufl.edu">CISE</a> | \
+        <a class="text-light" href="https://www.cise.ufl.edu/research/SurfLab.html">SurfLab</a></h6>\
+      <h6 class="text-center mx-auto text-light">© 2021 Jennifer C Cremer</h6>\
+    </div>\
+    </div>'
 
-        if(j%3==0)
-          innerHTML+=rowStart
-
-        var fullpath = path+name
-
-
-        innerHTML += colStart
-        innerHTML += "<img class=\"img-center img-thumbnail mx-auto d-block\" src=\""+fullpath+"\" style=\"max-height: 33vh; width:auto; height: auto; margin-bottom: 10px\">"
-        innerHTML += "</div>"
-
-        if(j%3==2 || j==json[0].images.length-1)
-          innerHTML+="</div>"
-
-      	j++
-    }
-    gallery.innerHTML = innerHTML
-})
-
-function shuffleArray(array) {
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
-    }
+    console.log("loaded")
 }
