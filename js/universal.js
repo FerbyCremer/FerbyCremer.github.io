@@ -15,7 +15,7 @@ window.onload = function() {
           <a class="nav-link" href="art_portfolio.html">Art</a>\
         </li>\
 	      <li class="nav-item">\
-	        <a class="nav-link" href="research-protected.html">Research</a>\
+	        <a class="nav-link" href="research.html">Research</a>\
 	      </li>\
 	      <li class="nav-item">\
 	        <a class="nav-link" href="https://github.com/FerbyCremer">Coding</a>\
