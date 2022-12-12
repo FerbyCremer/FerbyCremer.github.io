@@ -61,36 +61,89 @@
                     the below presentation.
                 </p>
             </div>
+        </div>
 
-            <div class="col-sm-10 my-auto mx-auto">
+        <div class="col-sm-10 my-auto mx-auto text-center">
+            <div class="col-12">
                 <h5 class="display-4">Composite Demo</h5>
             </div>
             <video width="720" controls>
                 <source src="researchAssets/VascularVR_Web.mp4" type="video/mp4">
                 Your browser does not support HTML video.
             </video>
-            <!-- <hr>
+        </div>
+        <!-- <hr>
             <div class="col-sm-10 my-auto mx-auto">
                 <h5 class="display-4">Poster Presentation at ACS 2021</h5>
             </div>
             <iframe src="https://drive.google.com/file/d/1iAvwa5xQfm2M8HdC4BKmx3Od0DReAVpu/preview" width="640" height="480"></iframe>
             <hr> -->
-            <div class="col-sm-10 my-auto mx-auto">
-                <h5 class="display-4">Stills (at various stages of development)</h5>
+        <div class="col-sm-10 my-auto mx-auto text-center">
+            <h5 class="display-5">Stills (at various stages of development)</h5>
+        </div>
+        <hr>
+        <!-- Photo Grid -->
+        <div class="row">
+            <div class="column" style="width: 10%;">
+                <img src="researchAssets/VRTrace.jpg" style="width:50%" onclick="myFunction(this);">
             </div>
-            <hr>
-            <!--- Image Slider -->
-            <div id="slides" class="carousel slide" data-ride="carousel">
+            <div class="column">
+                <img src="researchAssets/VREdit.jpg" style="width:50%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="researchAssets/vrModel.jpg" style="width:50%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="researchAssets/BlenderVessels.jpg" style="width:50%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="researchAssets/LiverModel.jpg" style="width:50%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="researchAssets/SofaStill.jpg" style="width:50%" onclick="myFunction(this);">
+            </div>
+            <div class="column">
+                <img src="researchAssets/ReportCard.jpg" style="width:50%" onclick="myFunction(this);">
+            </div>
+        </div>
+        <!-- The expanding image container -->
+        <div class="container">
+            <!-- Close the image -->
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+            <!-- Expanded image -->
+            <img id="expandedImg" style="width:100%">
+
+            <!-- Image text -->
+            <div id="imgtext"></div>
+        </div>
+    </div>
+    <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        } 
+    </script>
+    <!--- Image Slider -->
+    <!-- <div id="slides" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
-                <ul class="carousel-indicators">
-                    <li data-target="#slides" data-slide-to="0" class="active"></li>
-                    <li data-target="#slides" data-slide-to="1"></li>
-                    <li data-target="#slides" data-slide-to="2"></li>
-                    <li data-target="#slides" data-slide-to="3"></li>
-                    <li data-target="#slides" data-slide-to="4"></li>
-                    <li data-target="#slides" data-slide-to="5"></li>
-                    <li data-target="#slides" data-slide-to="6"></li>
-                </ul>
+                    <ul class="carousel-indicators">
+                        <li data-target="#slides" data-slide-to="0" class="active"></li>
+                        <li data-target="#slides" data-slide-to="1"></li>
+                        <li data-target="#slides" data-slide-to="2"></li>
+                        <li data-target="#slides" data-slide-to="3"></li>
+                        <li data-target="#slides" data-slide-to="4"></li>
+                        <li data-target="#slides" data-slide-to="5"></li>
+                        <li data-target="#slides" data-slide-to="6"></li>
+                    </ul>
                     <div class="carousel-item active">
                         <img src="researchAssets/VRTrace.jpg">
                     </div>
@@ -114,28 +167,28 @@
                     </div>
                     <hr>
                 </div>
-            </div>
-            <p>
-                New features in the near future including a simple skinning of landmark anatomy point clouds to
-                declutter the visual field while working. The current prototype code for this uses the basic Marching
-                Cubes Algorithm.
-            </p>
-            <!--- Footer -->
-            <div class="container-fluid bg-blue" id="footer"></div>
+            </div> -->
+    <p>
+        New features in the near future including a simple skinning of landmark anatomy point clouds to
+        declutter the visual field while working. The current prototype code for this uses the basic Marching
+        Cubes Algorithm.
+    </p>
+    <!--- Footer -->
+    <div class="container-fluid bg-blue" id="footer"></div>
 
-            <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Contact Form JavaScript -->
-            <script src="js/jqBootstrapValidation.js"></script>
-            <script src="js/contact_me.js"></script>
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
 
-            <!-- Custom scripts for this template -->
-            <script src="js/freelancer.min.js"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
 </body>
 
 </html>
