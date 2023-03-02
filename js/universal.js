@@ -40,8 +40,8 @@ window.onload = function () {
         <h6 class="text-center mx-auto text-light">\
           <a class="text-light" href="https://ufl.edu">University of Florida</a> | \
           <a class="text-light" href="https://cise.ufl.edu">CISE</a> | \
-          <a class="text-light" href="https://www.cise.ufl.edu/research/SurfLab.html">SurfLab</a></h6>\
-        <h6 class="text-center mx-auto text-light">© 2021 Jennifer C Cremer</h6>\
+          <a class="text-light" href="https://www.cise.ufl.edu/research/SurfLab">SurfLab</a></h6>\
+        <h6 class="text-center mx-auto text-light">© 2023 Jennifer C. Cremer</h6>\
       </div>\
     </div>'
 
