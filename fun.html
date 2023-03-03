@@ -20,6 +20,8 @@
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="js/universal.js"></script>
@@ -34,20 +36,24 @@
      <br>
      <!-- About Me / Home -->
      <div class="row row-space my-auto">
-        <div class="col-sm-1 col-lg-1"></div>
-        <div class="col-sm-2 col-lg-2">
+        <div class="col-sm-1 col-lg-3"></div>
+        <div class="col-sm-4 col-lg-2">
             <a target="_self" onclick="myFunction('artPages\\art_portfolioNew.html');">
                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
                     src="Art_portfolio\architecture\trans_hub\market.jpg" 
                     style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
                 <div class="centered">Mixed Artwork</div>
             </a>
+        </div>
+        <div class="col-sm-4 col-lg-2">
             <a target="_parent" onclick="myFunction('artPages\\CG.html');">
                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
                 src="Art_portfolio\TaintedVoltage/mask.png" 
                 style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
                 <div class="centered">Tainted Voltage Game</div>
             </a>
+        </div>
+        <div class="col-sm-4 col-lg-2">
             <a target="_parent" onclick="myFunction('artPages\\photography.html');">
                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
                 src="funAssets/22.jpg" 
@@ -55,12 +61,15 @@
                 <div class="centered" id="blockTitle">Photography</div>
             </a>
          </div>
+        </div>
+        <div class="row row-space my-auto">
+            <div class="col-sm-2 col-lg-4"></div>
                 <!-- The expanding image container -->
-                <div class="col-sm-6 col-lg-4 my-auto mx-auto" id="detailedColumn">
+                <div class="container-fluid" id="detailedColumn">
                     <!-- Close the image -->
                     
                 </div>
-            <div class="col-sm-1"></div>
+            <div class="col-sm-2 col-lg-4"></div>
         </div>
         <script>
             function myFunction(imgs) {
@@ -68,56 +77,8 @@
                 $("#detailedColumn").load(imgs)
             } 
         </script>
-        <script>
-            // Get the elements with class="column"
-            var elements = document.getElementsByClassName("column");
-
-            // Declare a loop variable
-            var i;
-
-            // Full-width images
-            function one() {
-                for (i = 0; i < elements.length; i++) {
-                    elements[i].style.msFlex = "100%"; // IE10
-                    elements[i].style.flex = "100%";
-                }
-            }
-
-            // Two images side by side
-            function two() {
-                for (i = 0; i < elements.length; i++) {
-                    elements[i].style.msFlex = "50%"; // IE10
-                    elements[i].style.flex = "50%";
-                }
-            }
-
-            // Four images side by side
-            function four() {
-                for (i = 0; i < elements.length; i++) {
-                    elements[i].style.msFlex = "25%"; // IE10
-                    elements[i].style.flex = "25%";
-                }
-            }
-
-            // Add active class to the current button (highlight it)
-            var header = document.getElementById("myHeader");
-            var btns = header.getElementsByClassName("btn");
-            for (var i = 0; i < btns.length; i++) {
-                btns[i].addEventListener("click", function() {
-                    var current = document.getElementsByClassName("active");
-                    current[0].className = current[0].className.replace(" active", "");
-                    this.className += " active";
-                });
-            }
-        </script>
-
-        <br>
-    </div>
 
     <div class="container-fluid bg-blue" id="footer"></div>
-
-    <script src="js/d3.js" charset="utf-8"></script>
-    <script src="js/pictures.js"></script>
     <script src="js/universal.js"></script>
 
 </body>
