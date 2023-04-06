@@ -33,50 +33,53 @@
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="header"></nav>
-     <br>
-     <!-- About Me / Home -->
-     <div class="row row-space my-auto">
+    <br>
+    <!-- About Me / Home -->
+    <div class="row row-space my-auto">
         <div class="col-sm-1 col-lg-3"></div>
         <div class="col-sm-4 col-lg-2">
             <a target="_self" onclick="myFunction('artPages\\art_portfolioNew.html');">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
-                    src="Art_portfolio\architecture\trans_hub\market.jpg" 
-                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                    src="Art_portfolio\architecture\trans_hub\market.jpg" style="margin-top: 10px; margin-bottom: 10px"
+                    alt="Market Detail">
                 <div class="centered">Mixed Artwork</div>
             </a>
         </div>
         <div class="col-sm-4 col-lg-2">
             <a target="_parent" onclick="myFunction('artPages\\CG.html');">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
-                src="Art_portfolio\TaintedVoltage/mask.png" 
-                style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                    src="Art_portfolio\TaintedVoltage/mask.png" style="margin-top: 10px; margin-bottom: 10px"
+                    alt="Market Detail">
                 <div class="centered">Tainted Voltage Game</div>
             </a>
         </div>
         <div class="col-sm-4 col-lg-2">
             <a target="_parent" onclick="myFunction('artPages\\photography.html');">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
-                src="funAssets/22.jpg" 
-                style="margin-top: 10px; margin-bottom: 10px" alt="Spider in a glass">
+                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" src="funAssets/22.jpg"
+                    style="margin-top: 10px; margin-bottom: 10px" alt="Spider in a glass">
                 <div class="centered" id="blockTitle">Photography</div>
             </a>
-         </div>
         </div>
-        <div class="row row-space my-auto">
-            <div class="col-sm-2 col-lg-4"></div>
-                <!-- The expanding image container -->
-                <div class="container-fluid" id="detailedColumn">
-                    <!-- Close the image -->
-                    
-                </div>
-            <div class="col-sm-2 col-lg-4"></div>
+    </div>
+    <div class="row row-space my-auto">
+        <div class="container-fluid my-auto mx-auto centered">
+            <div class="col-sm-4 col-lg-4"></div>
+            <!-- The expanding image container -->
+            <div class="container-fluid" id="detailedColumn">
+                <!-- Close the image -->
+                <script>
+                    load('artPages\\photography.html');
+                </script>
+            </div>
+            <div class="col-sm-4 col-lg-4"></div>
         </div>
-        <script>
-            function myFunction(imgs) {
-                var block = document.getElementById("detailedColumn");
-                $("#detailedColumn").load(imgs)
-            } 
-        </script>
+    </div>
+    <script>
+        function myFunction(imgs) {
+            var block = document.getElementById("detailedColumn");
+            $("#detailedColumn").load(imgs)
+        } 
+    </script>
 
     <div class="container-fluid bg-blue" id="footer"></div>
     <script src="js/universal.js"></script>
