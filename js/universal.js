@@ -2,7 +2,7 @@ window.onload = function () {
   var header = document.getElementById('header');
   header.innerHTML = '\
     <div class="container-fluid">\
-    <a class="navbar-light" href="index.html"><img src="images/name.png" height="90%" width="90%"></a>\
+    <h2><a class="navbar-light" href="index.html">Jennifer (Ferby) Cremer</a></h2>\
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">\
       <span class="navbar-toggler-icon"></span>\
     </button>\

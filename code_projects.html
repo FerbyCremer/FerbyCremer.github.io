@@ -1,29 +1,30 @@
 <!DOCTYPE>
 <html>
 <html lang="en">
+
 <head>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-    
-    <title>Jennifer Cremer</title>
-	
-    
-   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <title>Ferby Cremer - Code</title>
 
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="js/universal.js"></script>
 
-  <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="js/universal.js"></script>
+
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -31,13 +32,57 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="header"></nav>
-    
+
+    <!-- Icon Folders -->
+    <div class="row row-space my-auto">
+        <div class="col-sm-1 col-lg-3"></div>
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a target="_self" onclick="myFunction('artPages\\hobbies.html');">
+                            <img class="img-center img-thumbnail rounded-circle mx-auto d-block" src="funAssets/22.jpg"
+                                style="margin-top: 10px; margin-bottom: 10px" alt="Spider in a glass">
+                            <div class="centered" id="blockTitle">Activities</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_parent" onclick="myFunction('artPages\\CG.html');">
+                            <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                                src="Art_portfolio\TaintedVoltage/mask.png"
+                                style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                            <div class="centered">Tainted Voltage Game</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_parent" onclick="myFunction('artPages\\art_portfolioNew.html');">
+                            <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                                src="Art_portfolio\architecture\trans_hub\market.jpg"
+                                style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                            <div class="centered">Mixed Artwork</div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_parent" onclick="myFunction('artPages\\photography.html');">
+                            <img class="img-center img-thumbnail rounded-circle mx-auto my-auto d-block"
+                                src="Photography\_DSC9910.jpg" style="margin-top: 10px; margin-bottom: 10px"
+                                alt="Monkeys playing">
+                            <div class="centered">Photography</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-sm-1 col-lg-3"></div>
+    </div>
 
 
 
-    
     <!--- Footer -->
-    <div class="container-fluid bg-blue" id = "footer"></div>
+    <div class="container-fluid bg-blue" id="footer"></div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
