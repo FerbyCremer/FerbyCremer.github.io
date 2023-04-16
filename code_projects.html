@@ -33,70 +33,49 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="header"></nav>
 
-    <!-- Icon Folders -->
-    <div class="row row-space my-auto">
-        <div class="col-sm-1 col-lg-3"></div>
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a target="_self" onclick="myFunction('artPages\\hobbies.html');">
-                            <img class="img-center img-thumbnail rounded-circle mx-auto d-block" src="funAssets/22.jpg"
-                                style="margin-top: 10px; margin-bottom: 10px" alt="Spider in a glass">
-                            <div class="centered" id="blockTitle">Activities</div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_parent" onclick="myFunction('artPages\\CG.html');">
-                            <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
-                                src="Art_portfolio\TaintedVoltage/mask.png"
-                                style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                            <div class="centered">Tainted Voltage Game</div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_parent" onclick="myFunction('artPages\\art_portfolioNew.html');">
-                            <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
-                                src="Art_portfolio\architecture\trans_hub\market.jpg"
-                                style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                            <div class="centered">Mixed Artwork</div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a target="_parent" onclick="myFunction('artPages\\photography.html');">
-                            <img class="img-center img-thumbnail rounded-circle mx-auto my-auto d-block"
-                                src="Photography\_DSC9910.jpg" style="margin-top: 10px; margin-bottom: 10px"
-                                alt="Monkeys playing">
-                            <div class="centered">Photography</div>
-                        </a>
-                    </li>
-                </ul>
+    <div class="container-fluid center padding">
+        <div class="row row-space my-auto welcome text-center">
+            <div class="col-12">
+                <a href="https://www.cise.ufl.edu/research/SurfLab/">
+                    <h1 class="display-4">Click for Github Page</h1>
+                </a>
             </div>
-        </nav>
-        <div class="col-sm-1 col-lg-3"></div>
-    </div>
+            <hr>
+            <div class="col-12">
+                <p>
+                    Many of the repositors of recent activity on the Github are private, either due to being a course
+                    assignment (and thus kept private to maintain course integrity) or research.
+                    Thus, I had the idea to make this page to at least showcase the outputs of some of those
+                    assignments.
+                    However, since research occupies most of my time, and much of the spare time is divided between ASWF
+                    and family,
+                    this page remains under heavy construction. Your understanding is appreciated.
+                </p>
+            </div>
+        </div>
+        <!-- Project Folders -->
+        <div class="row row-space my-auto">
+            <div class="col-sm-1 col-lg-3"></div>
+            <div class="col-sm-4 col-lg-6 mx-auto">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/p0I2bMXk2z8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <h5><a href="https://www.youtube.com/watch?v=p0I2bMXk2z8">Tessellation Engine Scene</a></h5>
+                <h6>Advanced Computer Graphics group project with <a href="http://www.michaelfperez.com/">Michael
+                        Perez</a> that develops a sailboat scene using OpenGL's tessellation engine.</h6>
+
+                <img src="CodeProjects/p2Demo.gif" alt="Scene Graphs and Quaternions" style="width:100%">
+                <h6>Computer Graphics assignment for Scene Graphs and Quaternions using OpenGL.</h6>
+            </div>
+
+            <div class="col-sm-1 col-lg-3"></div>
+        </div>
 
 
 
-    <!--- Footer -->
-    <div class="container-fluid bg-blue" id="footer"></div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
+        <!--- Footer -->
+        <div class="container-fluid bg-blue" id="footer"></div>
 </body>
 
 </html>

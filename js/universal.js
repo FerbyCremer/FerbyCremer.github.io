@@ -18,7 +18,7 @@ window.onload = function () {
 	        <a class="nav-link" href="research.html">Research</a>\
 	      </li>\
 	      <li class="nav-item">\
-	        <a class="nav-link" href="https://github.com/FerbyCremer">Coding</a>\
+	        <a class="nav-link" href="code_projects.html">Coding</a>\
 	      </li>\
 	      <li class="nav-item">\
 	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\
