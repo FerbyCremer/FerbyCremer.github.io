@@ -2,7 +2,7 @@ window.onload = function () {
   var header = document.getElementById('header');
   header.innerHTML = '\
     <div class="container-fluid">\
-    <a class="navbar-light" href="index.html"><img src="images/name.png" height="90%" width="90%"></a>\
+    <h2><a class="navbar-light" href="index.html">Jennifer (Ferby) Cremer</a></h2>\
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">\
       <span class="navbar-toggler-icon"></span>\
     </button>\
@@ -18,7 +18,7 @@ window.onload = function () {
 	        <a class="nav-link" href="research.html">Research</a>\
 	      </li>\
 	      <li class="nav-item">\
-	        <a class="nav-link" href="https://github.com/FerbyCremer">Coding</a>\
+	        <a class="nav-link" href="code_projects.html">Coding</a>\
 	      </li>\
 	      <li class="nav-item">\
 	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\

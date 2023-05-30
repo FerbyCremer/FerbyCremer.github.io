@@ -1,132 +1,108 @@
-<!DOCTYPE>
-<html>
-
-<head>
-    <title>Jennifer Cremer - Portfolio / Architecture</title>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="header"></nav>
-
-    <div class="container-fluid bg-light">
-        <br>
-
-        <!-- Trans hub images -->
-        <div class="container">
-            <!-- <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span> -->
-            <!--- general Architecture Series -->
-            <div id="expandedImg">
-                <div class="container-fluid padding" id="about">
-                    <div class="row welcome text-center">
-                        <div class="col-12">
-                            <h1 class="display-4">Miami Design District Transportation Hub</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="header" id="myHeader">
-                    <p>Click on the buttons to change the grid view.</p>
-                    <button class="btn" onclick="one()">1</button>
-                    <button class="btn active" onclick="two()">2</button>
-                    <button class="btn" onclick="four()">4</button>
-                </div>
-                <!-- Photo Grid -->
-                <div class="row">
-                    <div class="column">
-                        <img src="..\Art_portfolio\architecture\trans_hub\PLAN AND ELEVATIONS.jpg" style="width:100%">
-                        <img src="..\Art_portfolio\architecture\trans_hub\summer sun diagram.jpg" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="..\Art_portfolio\architecture\trans_hub\final for sure.jpg" style="width:100%">
-                        <img src="..\Art_portfolio\architecture\trans_hub\axon.jpg" style="width:100%">
-                        <img src="..\Art_portfolio\architecture\trans_hub\plan.jpg" style="width:100%">
-                    </div>
-                    <div class="column">
-                        <img src="..\Art_portfolio\architecture\trans_hub\gallery detail.jpg" style="width:100%">
-                        <img src="..\Art_portfolio\architecture\trans_hub\market.jpg" style="width:100%">
-                        <img src="..\Art_portfolio\architecture\trans_hub\perspective.jpg" style="width:100%">
-                    </div>
-                </div>
-                <script>
-                    // Get the elements with class="column"
-                    var elements = document.getElementsByClassName("column");
-
-                    // Declare a loop variable
-                    var i;
-
-                    // Full-width images
-                    function one() {
-                        for (i = 0; i < elements.length; i++) {
-                            elements[i].style.msFlex = "100%"; // IE10
-                            elements[i].style.flex = "100%";
-                        }
-                    }
-
-                    // Two images side by side
-                    function two() {
-                        for (i = 0; i < elements.length; i++) {
-                            elements[i].style.msFlex = "50%"; // IE10
-                            elements[i].style.flex = "50%";
-                        }
-                    }
-
-                    // Four images side by side
-                    function four() {
-                        for (i = 0; i < elements.length; i++) {
-                            elements[i].style.msFlex = "25%"; // IE10
-                            elements[i].style.flex = "25%";
-                        }
-                    }
-
-                    // Add active class to the current button (highlight it)
-                    var header = document.getElementById("myHeader");
-                    var btns = header.getElementsByClassName("btn");
-                    for (var i = 0; i < btns.length; i++) {
-                        btns[i].addEventListener("click", function() {
-                            var current = document.getElementsByClassName("active");
-                            current[0].className = current[0].className.replace(" active", "");
-                            this.className += " active";
-                        });
-                    }
-                </script>
+<section id="architecture">
+    <!-- <div class="row row-space my-auto">
+        <div class="col-sm-1 col-lg-1"></div>
+        <div class="column">
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\artTubeCAD.png" onclick="myFunction(this);">
             </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\Curiosity Model Composit_o.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\Curiosity NFAA composit_o.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\eyrie_o.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\eyrieVellum_o.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\KioskDetail.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\KioskFull.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\model compilation_o.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\CompetitionPoster.png" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\gallery detail.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\market.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\perspective.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\PLAN AND ELEVATIONS.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\axon.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\plan.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\trans_hub\final for sure.jpg" onclick="myFunction(this);">
+            </div>
+            <div class="row row-space my-auto">
+                <img src="..\Art_portfolio\architecture\11.jpg" onclick="myFunction(this);">
+            </div>
+
         </div>
+        <div class="col-sm-1 col-lg-1"></div>
 
+        <div class="column"> -->
 
-        <!--- Footer -->
-        <div class="container-fluid bg-blue" id="footer"></div>
+    <!-- The expanding image container -->
+    <!-- <div class="container"> -->
+    <!-- Close the image -->
+    <!-- <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span> -->
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Expanded image -->
+    <!-- <img id="expandedImg" style="width:100%"> -->
 
-        <!-- Plugin JavaScript -->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Image text -->
+    <!-- <div id="imgtext"></div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="col-sm-1 col-lg-1"></div> -->
 
-        <!-- Contact Form JavaScript -->
-        <script src="js/jqBootstrapValidation.js"></script>
-        <script src="js/contact_me.js"></script>
-
-        <!-- Custom scripts for this template -->
-        <script src="js/freelancer.min.js"></script>
-        <script src="../js/portfolio.js"></script>
-</body>
-
-</html>
+    <!-- </div> -->
+    <!-- <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        } 
+    </script> -->
+    <img src="..\Art_portfolio\architecture\artTubeCAD.png">
+    <img src="..\Art_portfolio\architecture\Curiosity Model Composit_o.jpg">
+    <img src="..\Art_portfolio\architecture\Curiosity NFAA composit_o.jpg">
+    <img src="..\Art_portfolio\architecture\eyrie_o.jpg">
+    <img src="..\Art_portfolio\architecture\eyrieVellum_o.jpg">
+    <img src="..\Art_portfolio\architecture\KioskDetail.jpg">
+    <img src="..\Art_portfolio\architecture\KioskFull.jpg">
+    <img src="..\Art_portfolio\architecture\model compilation_o.jpg">
+    <img src="..\Art_portfolio\architecture\CompetitionPoster.png">
+    <img src="..\Art_portfolio\architecture\trans_hub\gallery detail.jpg">
+    <img src="..\Art_portfolio\architecture\trans_hub\market.jpg">
+    <img src="..\Art_portfolio\architecture\trans_hub\perspective.jpg">
+    <img src="..\Art_portfolio\architecture\trans_hub\PLAN AND ELEVATIONS.jpg">
+    <img src="..\Art_portfolio\architecture\trans_hub\axon.jpg">
+    <img src="..\Art_portfolio\architecture\trans_hub\plan.jpg">
+    <img src="..\Art_portfolio\architecture\trans_hub\final for sure.jpg">
+    <img src="..\Art_portfolio\architecture\11.jpg">
+</section>

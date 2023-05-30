@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <title>Jennifer Cremer - The Human</title>
+    <title>Ferby Cremer - Hobbies</title>
 
 
     <!-- Latest compiled and minified CSS -->
@@ -32,44 +32,77 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" id="header"></nav>
-     <br>
-     <!-- About Me / Home -->
-     <div class="row row-space my-auto">
-        <div class="col-sm-1 col-lg-3"></div>
-        <div class="col-sm-4 col-lg-2">
-            <a target="_self" onclick="myFunction('artPages\\art_portfolioNew.html');">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
-                    src="Art_portfolio\architecture\trans_hub\market.jpg" 
-                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                <div class="centered">Mixed Artwork</div>
-            </a>
-        </div>
-        <div class="col-sm-4 col-lg-2">
-            <a target="_parent" onclick="myFunction('artPages\\CG.html');">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
-                src="Art_portfolio\TaintedVoltage/mask.png" 
-                style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                <div class="centered">Tainted Voltage Game</div>
-            </a>
-        </div>
-        <div class="col-sm-4 col-lg-2">
-            <a target="_parent" onclick="myFunction('artPages\\photography.html');">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" 
-                src="funAssets/22.jpg" 
-                style="margin-top: 10px; margin-bottom: 10px" alt="Spider in a glass">
-                <div class="centered" id="blockTitle">Photography</div>
-            </a>
-         </div>
-        </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark sticky-top" id="header"></nav>
+
+    <div class="container-fluid bg-light">
+        <br>
+
+        <!-- Icon Folders -->
         <div class="row row-space my-auto">
-            <div class="col-sm-2 col-lg-4"></div>
+            <div class="col-sm-1 col-lg-3"></div>
+            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a target="_self" onclick="myFunction('artPages\\hobbies.html');">
+                                <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                                    src="funAssets/22.jpg" style="margin-top: 10px; margin-bottom: 10px"
+                                    alt="Spider in a glass">
+                                <div class="centered" id="blockTitle">Activities</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_parent" onclick="myFunction('artPages\\architecture.html');">
+                                <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                                    src="Art_portfolio\architecture\trans_hub\market.jpg"
+                                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                                <div class="centered">Architecture</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_parent" onclick="myFunction('artPages\\CG.html');">
+                                <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                                    src="Art_portfolio\TaintedVoltage/mask.png"
+                                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                                <div class="centered">Digital Art</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_parent" onclick="myFunction('artPages\\fineArt.html');">
+                                <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
+                                    src="Art_portfolio\architecture\trans_hub\market.jpg"
+                                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                                <div class="centered">Traditional Art</div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a target="_parent" onclick="myFunction('artPages\\photography.html');">
+                                <img class="img-center img-thumbnail rounded-circle mx-auto my-auto d-block"
+                                    src="Photography\owlButt.jpg" style="margin-top: 10px; margin-bottom: 10px"
+                                    alt="Monkeys playing">
+                                <div class="centered">Photography</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="col-sm-1 col-lg-3"></div>
+        </div>
+
+        <!-- Content Container -->
+        <div class="row row-space my-auto">
+            <div class="container-fluid my-auto mx-auto centered">
+                <div class="col-sm-4 col-lg-4"></div>
                 <!-- The expanding image container -->
                 <div class="container-fluid" id="detailedColumn">
                     <!-- Close the image -->
-                    
+
                 </div>
-            <div class="col-sm-2 col-lg-4"></div>
+                <div class="col-sm-4 col-lg-4"></div>
+            </div>
         </div>
         <script>
             function myFunction(imgs) {
@@ -78,8 +111,8 @@
             } 
         </script>
 
-    <div class="container-fluid bg-blue" id="footer"></div>
-    <script src="js/universal.js"></script>
+        <div class="container-fluid bg-blue" id="footer"></div>
+    </div>
 
 </body>
 
