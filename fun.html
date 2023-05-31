@@ -47,7 +47,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a target="_self" onclick="myFunction('artPages\\hobbies.html');">
+                            <a target="_self" onclick="loadCollection('artPages\\hobbies.html');">
                                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
                                     src="funAssets/22.jpg" style="margin-top: 10px; margin-bottom: 10px"
                                     alt="Spider in a glass">
@@ -55,7 +55,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_parent" onclick="myFunction('artPages\\architecture.html');">
+                            <a target="_parent" onclick="loadCollection('artPages\\architecture.html');">
                                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
                                     src="Art_portfolio\architecture\trans_hub\market.jpg"
                                     style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
@@ -63,7 +63,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_parent" onclick="myFunction('artPages\\CG.html');">
+                            <a target="_parent" onclick="loadCollection('artPages\\CG.html');">
                                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
                                     src="Art_portfolio\TaintedVoltage/mask.png"
                                     style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
@@ -71,15 +71,15 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_parent" onclick="myFunction('artPages\\fineArt.html');">
+                            <a target="_parent" onclick="loadCollection('artPages\\fineArt.html');">
                                 <img class="img-center img-thumbnail rounded-circle mx-auto d-block"
-                                    src="Art_portfolio\architecture\trans_hub\market.jpg"
+                                    src="Art_portfolio\2D_Traditional/12_SkullS_AP_o.jpg"
                                     style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
                                 <div class="centered">Traditional Art</div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a target="_parent" onclick="myFunction('artPages\\photography.html');">
+                            <a target="_parent" onclick="loadCollection('artPages\\photography.html');">
                                 <img class="img-center img-thumbnail rounded-circle mx-auto my-auto d-block"
                                     src="Photography\owlButt.jpg" style="margin-top: 10px; margin-bottom: 10px"
                                     alt="Monkeys playing">
@@ -94,25 +94,55 @@
 
         <!-- Content Container -->
         <div class="row row-space my-auto">
-            <div class="container-fluid my-auto mx-auto centered">
-                <div class="col-sm-4 col-lg-4"></div>
+
+            <div class="col-sm-4 col-lg-6">
                 <!-- The expanding image container -->
                 <div class="container-fluid" id="detailedColumn">
                     <!-- Close the image -->
 
                 </div>
-                <div class="col-sm-4 col-lg-4"></div>
             </div>
-        </div>
-        <script>
-            function myFunction(imgs) {
-                var block = document.getElementById("detailedColumn");
-                $("#detailedColumn").load(imgs)
-            } 
-        </script>
 
-        <div class="container-fluid bg-blue" id="footer"></div>
+            <div class="col-sm-4 col-lg-6">
+                <!-- <div class="container-fluid my-auto mx-auto centered"> -->
+                <!-- The expanding image container -->
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span>
+
+                    <!-- Expanded image -->
+                    <img src="researchAssets/VRTrace.jpg" id="expandedImg" style="width:100%">
+
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                </div>
+            </div>
+
+        </div>
+    <!-- </div> -->
+    <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        } 
+    </script>
+    <script>
+        function loadCollection(imgs) {
+            var block = document.getElementById("detailedColumn");
+            $("#detailedColumn").load(imgs)
+        } 
+    </script>
+
     </div>
+    <div class="container-fluid bg-blue" id="footer"></div>
 
 </body>
 
