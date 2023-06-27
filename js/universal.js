@@ -24,7 +24,7 @@ window.onload = function () {
 	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\
 	      </li>\
           <li class="nav-item">\
-            <a class="nav-link" href="index.html">Connect</a>\
+            <a class="nav-link" href="index.html#connect">Connect</a>\
 	      </li>\
 	    </ul>\
         </div>\
