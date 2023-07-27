@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Futura PT Light', sans-serif;
     color: #222;
 }
 
@@ -20,13 +20,21 @@ body {
     font-size: 1.1em !important;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(26, 48, 26, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(113, 77, 166, 0.75);
+}
+
 .btn-primary {
     background-color: #6648b1;
     border: 1px solid #6648b1;
 }
 
 .btn-primary:hover {
-    background-color: #563d7c;
+    background-color: #5d3b90;
 }
 
 .jumbotron {
@@ -157,32 +165,35 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 1200px) {
     #photos {
-    -moz-column-count:    4;
-    -webkit-column-count: 4;
-    column-count:         4;
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
     }
-  }
-  @media (max-width: 1000px) {
+}
+
+@media (max-width: 1000px) {
     #photos {
-    -moz-column-count:    3;
-    -webkit-column-count: 3;
-    column-count:         3;
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
     }
-  }
-  @media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
     #photos {
-    -moz-column-count:    2;
-    -webkit-column-count: 2;
-    column-count:         2;
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
     }
-  }
-  @media (max-width: 400px) {
+}
+
+@media (max-width: 400px) {
     #photos {
-    -moz-column-count:    1;
-    -webkit-column-count: 1;
-    column-count:         1;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
     }
-  }
+}
 
 a {
     color: #E28F41;
@@ -193,8 +204,12 @@ a:hover {
     text-decoration: none;
 }
 
-.bg-blue {
-    background-color: #1c3045;
+.bg-tertiary {
+    background-color: #b5c2b4;
+}
+
+.text-purple {
+    color: #5d3b90;
 }
 
 .bg-grey {
@@ -203,11 +218,12 @@ a:hover {
 
 
 img {
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    /* border: 1px solid #ddd;
+    border-radius: 4px; */
     padding: 5px;
     width: 150px;
 }
+
 .img-thumbnail {
     padding: .25rem;
     background-color: #fff;
@@ -215,7 +231,7 @@ img {
     border-radius: .25rem;
     max-width: 100%;
     height: auto;
-  }
+}
 
 img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
