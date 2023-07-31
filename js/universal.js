@@ -8,9 +8,6 @@ window.onload = function () {
     </button>\
     <div class="collapse navbar-collapse" id="navbarResponsive">\
 		<ul class="navbar-nav ml-auto">\
-	       <li class="nav-item">\
-	         <a class="nav-link" href="index.html">Home</a>\
-	      </li>\
         <li class="nav-item">\
         <a class="nav-link" href="fun.html">Hobbies</a>\
       </li>\
@@ -21,7 +18,15 @@ window.onload = function () {
 	        <a class="nav-link" href="code_projects.html">Coding</a>\
 	      </li>\
 	      <li class="nav-item">\
-	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\
+        <div class="dropdown">\
+          <button class="dropbtn">Resume\
+            <i class="fa fa-caret-down"></i>\
+          </button>\
+          <div class="dropdown-content">\
+            <a class="nav-link" target="_blank" href="files/ResearchResume.pdf">Resume</a>\
+  	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\
+            </div>\
+            </div>\
 	      </li>\
           <li class="nav-item">\
             <a class="nav-link" href="index.html#connect">Connect</a>\
