@@ -33,6 +33,7 @@ body {
 .dropdown {
     float: left;
     padding: inherit;
+    text-align: center;
     /* overflow: hidden; */
 }
 

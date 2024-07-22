@@ -14,22 +14,19 @@ window.onload = function () {
 	      <li class="nav-item">\
 	        <a class="nav-link" href="research.html">Research</a>\
 	      </li>\
+        <li class="nav-item">\
+          <div class="dropdown">\
+            <a class="nav-link" target="_blank" href="files/CV.pdf">CV <i class="fa fa-caret-down"></i></a>\
+            <div class="dropdown-content">\
+              <a class="nav-link" target="_blank" href="files/ResearchResume.pdf">Resume</a>\
+            </div>\
+          </div>\
+        </li>\
 	      <li class="nav-item">\
 	        <a class="nav-link" href="code_projects.html">Coding</a>\
 	      </li>\
-	      <li class="nav-item">\
-        <div class="dropdown">\
-          <button class="dropbtn">Resume\
-            <i class="fa fa-caret-down"></i>\
-          </button>\
-          <div class="dropdown-content">\
-            <a class="nav-link" target="_blank" href="files/ResearchResume.pdf">Resume</a>\
-  	        <a class="nav-link" target="_blank" href="files/CV.pdf">CV</a>\
-            </div>\
-            </div>\
-	      </li>\
-          <li class="nav-item">\
-            <a class="nav-link" href="index.html#connect">Connect</a>\
+        <li class="nav-item">\
+          <a class="nav-link" href="index.html#connect">Connect</a>\
 	      </li>\
 	    </ul>\
         </div>\
