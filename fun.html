@@ -24,6 +24,9 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
     <script src="js/universal.js"></script>
 
     <link rel="stylesheet" href="style.css">
@@ -34,91 +37,63 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-tertiary sticky-top" id="header"></nav>
 
-    <div class="container-fluid bg-light">
-        <br>
-
-        <!-- Icon Folders -->
-        <div class="row row-space my-auto">
-            <div class="col-sm-1 col-lg-3"></div>
-            <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item button">
-                            <a target="_self" onclick="loadCollection('artPages\\hobbies.html');">
-                                <img class="img-center img-thumbnail rounded-circle d-block" src="funAssets/22.jpg"
-                                    style="margin-top: 10px; margin-bottom: 10px" alt="Spider in a glass">
-                                <div class="centered" id="blockTitle">Activities</div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_parent" onclick="loadCollection('artPages\\architecture.html');">
-                                <img class="img-center img-thumbnail rounded-circle d-block"
-                                    src="Art_portfolio\architecture\trans_hub\market.jpg"
-                                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                                <div class="centered">Architecture</div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_parent" onclick="loadCollection('artPages\\CG.html');">
-                                <img class="img-center img-thumbnail rounded-circle d-block"
-                                    src="Art_portfolio\TaintedVoltage/mask.png"
-                                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                                <div class="centered">Digital Art</div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_parent" onclick="loadCollection('artPages\\fineart.html');">
-                                <img class="img-center img-thumbnail rounded-circle d-block"
-                                    src="Art_portfolio\2D_Traditional/12_SkullS_AP_o.jpg"
-                                    style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
-                                <div class="centered">Traditional Art</div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a target="_parent" onclick="loadCollection('artPages\\photography.html');">
-                                <img class="img-center img-thumbnail rounded-circle d-block"
-                                    src="Photography\owlButt.jpg" style="margin-top: 10px; margin-bottom: 10px"
-                                    alt="Monkeys playing">
-                                <div class="centered">Photography</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <div class="col-sm-1 col-lg-3"></div>
+    <!-- Portfolio Tabs -->
+    <div class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#PortfolioTabs">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="PortfolioTabs">
+            <ul class="navbar-nav ml-auto mr-auto">
+                <li class="nav-item button">
+                    <a target="_self" onclick="loadCollection('artPages\\hobbies.html');">
+                        <img class="img-center img-thumbnail rounded-circle d-block" src="funAssets/38.jpg"
+                            style="margin-top: 10px; margin-bottom: 10px"
+                            alt="two people sitting on a rock with their backs to the camera looking out toward a salt flat">
+                        <div class="centered" id="blockTitle">Activities</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a target="_parent" onclick="loadCollection('artPages\\architecture.html');">
+                        <img class="img-center img-thumbnail rounded-circle d-block"
+                            src="Art_portfolio\architecture\trans_hub\market.jpg"
+                            style="margin-top: 10px; margin-bottom: 10px" alt="Market Detail">
+                        <div class="centered">Architecture</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a target="_parent" onclick="loadCollection('artPages\\fineart.html');">
+                        <img class="img-center img-thumbnail rounded-circle d-block"
+                            src="Art_portfolio\2D_Traditional/12_SkullS_AP_o.jpg"
+                            style="margin-top: 10px; margin-bottom: 10px" alt="girl with skull in mouth">
+                        <div class="centered">Art Creations</div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a target="_parent" onclick="loadCollection('artPages\\photography.html');">
+                        <img class="img-center img-thumbnail rounded-circle d-block" src="Photography\owlButt.jpg"
+                            style="margin-top: 10px; margin-bottom: 10px" alt="Owl Butt">
+                        <div class="centered">Photography</div>
+                    </a>
+                </li>
+            </ul>
         </div>
+    </div>
+    <div class="container-fluid bg-light ml-auto mr-auto">
 
         <!-- Content Container -->
-        <div class="row row-space my-auto">
-
-            <div class="col-sm-4 col-lg-6">
-                <!-- The expanding image container -->
-                <div class="container-fluid" id="detailedColumn">
-                    <!-- Close the image -->
-
-                </div>
+        <div class="row row-space my-auto" style="height: 63vh;">
+            <!-- The expanding image container -->
+            <div class="card" style="width: 49vw; height: 90%; overflow-y: auto;" id="detailedColumn">
             </div>
-
-            <div class="col-sm-4 col-lg-6">
-                <!-- <div class="container-fluid my-auto mx-auto centered"> -->
-                <!-- The expanding image container -->
-                <div class="container">
-                    <!-- Close the image -->
-                    <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span>
-
-                    <!-- Expanded image -->
-                    <img src="researchAssets/VRTrace.jpg" id="expandedImg" style="width:100%">
-
-                    <!-- Image text -->
-                    <div id="imgtext"></div>
-                </div>
+            <div class="card card-body" style="width:49vw; height: 90%; object-fit: cover; object-position: center;">
+                <!-- Expanded image -->
+                <img src="Art_portfolio/TaintedVoltage/GamePoster.png" id="expandedImg"
+                    style="height:100%; width:100%; object-fit: cover; object-position: center;">
+                <!-- Image text -->
+                <div id="imgtext"></div>
             </div>
-
         </div>
-        <!-- </div> -->
+
         <script>
             function myFunction(imgs) {
                 // Get the expanded image
@@ -130,11 +105,12 @@
                 // Use the value of the alt attribute of the clickable image as text inside the expanded image
                 imgText.innerHTML = imgs.alt;
                 // Show the container element (hidden with CSS)
-                expandImg.parentElement.style.display = "block";
+                // expandImg.parentElement.style.display = "block";
             } 
         </script>
         <script>
             function loadCollection(imgs) {
+                console.log("DETAILED COLUMN FUNCTION");
                 var block = document.getElementById("detailedColumn");
                 $("#detailedColumn").load(imgs)
             } 
