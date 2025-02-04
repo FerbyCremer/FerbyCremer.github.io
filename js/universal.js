@@ -18,7 +18,7 @@ window.onload = function () {
           <div class="dropdown">\
             <a class="nav-link" target="_blank" href="files/CV.pdf">CV <i class="fa fa-caret-down"></i></a>\
             <div class="dropdown-content">\
-              <a class="nav-link" target="_blank" href="files/ResearchResume.pdf">Resume</a>\
+              <a class="nav-link" target="_blank" href="files/Resume.pdf">Resume</a>\
             </div>\
           </div>\
         </li>\
