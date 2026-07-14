@@ -36,11 +36,7 @@ window.onload = function () {
   footer.innerHTML = '\
 	<div class="row row-space my-auto">\
       <div class="col-sm-12">\
-        <h6 class="text-center mx-auto text-purple">\
-          <a class="text-purple" href="https://ufl.edu">University of Florida</a> | \
-          <a class="text-purple" href="https://cise.ufl.edu">CISE</a> | \
-          <a class="text-purple" href="https://www.cise.ufl.edu/research/SurfLab">SurfLab</a></h6>\
-        <h6 class="text-center mx-auto text-purple">© 2023 Jennifer C. Cremer</h6>\
+        <h6 class="text-center mx-auto text-purple">© 2026 Jennifer C. Cremer</h6>\
       </div>\
     </div>'
 

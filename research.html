@@ -40,32 +40,62 @@
     <div class="container-fluid center padding" id="vascVR">
         <div class="row row-space my-auto welcome text-center">
             <div class="col-12">
-                <h1 class="display-4">DICOM-To-Mesh VR</h1>
+                <h1 class="display-4">Doctoral Thesis: Scan2Twin</h1>
             </div>
             <hr>
-            <div class="col-12">
-                <p class="lead">
-                    This project is a cross-platform VR application meant to bring state-of-the-art reconstruction
-                    technology to non-specialist physicians.
-                    By using stereoscopic rendering, natural navigation techniques, and proprioception-enhanced memory -
-                    it allows clinicians to tweak and tune rapid prototype models created with the assitance of a
-                    segmentation algorithm module,
-                    without the need for time-consuming requests of uniquely trained engineers to perform the
-                    alterations.
-                </p>
-                <p>
-                    While orginally invisioned as a stand-alone piece of software, SurfLab has since converted the
-                    software to work using the power of the <b>Unity3D engine and OpenXR APIs</b>.
-                    In addition to the central code we have also started the instantiation of an accompanying Python
-                    script, to be used in conjunction with Blender, to rig the blood vessel and tumor models with
-                    appropriate spring constraints.
-                    These rigged models are then used in another one of our lab's projects,
-                    <a href="https://www.cise.ufl.edu/research/SurfLab/TIPS/index.php">TIPS</a>,
-                    which is seen in proof-of-concept at the end of the embedded demo of the below presentation.
-                </p>
+            <div class="row row-space">
+                <div class="col-sm-12 col-lg-6">
+                    <p class="lead">
+                        This project is a cross-platform VR application meant to bring state-of-the-art reconstruction
+                        technology to non-specialist physicians.
+                        By using stereoscopic rendering, natural navigation techniques, and proprioception-enhanced
+                        memory -
+                        it allows clinicians to tweak and tune rapid prototype models created with the assitance of a
+                        segmentation algorithm module,
+                        without the need for time-consuming requests of uniquely trained engineers to perform the
+                        alterations.
+                    </p>
+                    <p>
+                        While orginally invisioned as a stand-alone piece of software, SurfLab has since converted the
+                        software to work using the power of the <b>Unity3D engine and OpenXR APIs</b>.
+                        In addition to the central code we have also started the instantiation of an accompanying Python
+                        script, to be used in conjunction with Blender, to rig the blood vessel and tumor models with
+                        appropriate spring constraints.
+                        These rigged models are then used in another one of our lab's projects,
+                        <a href="https://www.cise.ufl.edu/research/SurfLab/TIPS/index.php">TIPS</a>,
+                        which is seen in proof-of-concept at the end of the embedded demo of the below presentation.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-lg-6">
+                    <!-- The expanding image container -->
+                    <div class="container">
+                        <!-- Close the image -->
+                        <!-- <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span> -->
+
+                        <!-- Expanded image -->
+                        <img class="expandedImg" src="researchAssets/psi_curate4.JPG" id="expandedImg">
+
+                        <!-- Image text -->
+                        <div id="imgtext"></div>
+                    </div>
+                    
+                </div>
             </div>
+            <div class="row">
+                        <img src="researchAssets/PSI_scan_ZoomedFull.png" onclick="ImageZoomed(this);">
+
+                        <img src="researchAssets/psi_curate4.JPG" onclick="ImageZoomed(this);">
+
+                        <img src="researchAssets/psi_voxel3.png" onclick="ImageZoomed(this);">
+
+                        <img src="researchAssets/psi_curate6.JPG" onclick="ImageZoomed(this);">
+
+                        <img src="researchAssets/OculusScreenshot1688050760.jpeg" onclick="ImageZoomed(this);">
+
+                        <!-- <img src="researchAssets/SofaStill.jpg" onclick="ImageZoomed(this);"> -->
+                    </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <div class="column" id="CompositVideo">
                 <h2 class="display-5">Project Highlight from Video Abstract for ASCRS</h2>
                 <video width="720" controls>
@@ -74,97 +104,55 @@
                 </video>
             </div>
             <div class="column">
-                <h3 class="display-5">Project Stills</h3>
-                <!-- </div> -->
-                <!-- <div class="my-auto mx-auto"> -->
-
-                <!-- The expanding image container -->
-                <div class="container">
-                    <!-- Close the image -->
-                    <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span>
-
-                    <!-- Expanded image -->
-                    <img class="expandedImg" src="researchAssets/psi_curate4.JPG" id="expandedImg">
-
-                    <!-- Image text -->
-                    <div id="imgtext"></div>
-                </div>
-            </div>
-            <!-- Photo Grid -->
-            <div class="row row-space mx-auto my-auto">
-                <div class="column">
-                    <img src="researchAssets/PSI_scan_ZoomedFull.png" onclick="myFunction(this);">
-
-                    <img src="researchAssets/CT_2dVesselCheck2.png" onclick="myFunction(this);">
-
-                    <img src="researchAssets/CT_VR_Model_Staged.JPG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/psi_curate4.JPG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/psi_voxel3.png" onclick="myFunction(this);">
-
-                    <img src="researchAssets/Scans_VR_Transparency.JPG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/Scans_VR5.JPG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/psi_trace.PNG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/vesselTrace2.png" onclick="myFunction(this);">
-
-                    <img src="researchAssets/psi_curate6.JPG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/psi_finalCurate2.PNG" onclick="myFunction(this);">
-
-                    <img src="researchAssets/OculusScreenshot1688050760.jpeg" onclick="myFunction(this);">
-
-                    <img src="researchAssets/LiverModel.jpg" onclick="myFunction(this);">
-
-                    <img src="researchAssets/SofaStill.jpg" onclick="myFunction(this);">
-
-                    <img src="researchAssets/ReportCard.jpg" onclick="myFunction(this);">
-                </div>
-            </div>
-        </div>
+                <h3 class="display-5">Project Stills</h3> -->
         <!-- </div> -->
-        <hr>
-        <div class="row row-space my-auto">
-            <!-- <div class="col-sm-1 col-lg-3"></div> -->
-            <div class="col-12">
-                <!-- <h2 class="display-5">Poster Presentations</h2> -->
-                <div class="col-lg-6" id="DC">
-                    <h3 class="display-5">IEEE VR 2024 DC</h3>
-                    <hr>
-                    <iframe src="researchAssets/IEEE_VR_DC_2024.pdf" width=100% height="900px"></iframe>
-                    <br>
-                    <a href="researchAssets/IEEE_VR_DC_2024.pdf" class="btn btn-primary">View in
-                        Own Window</a>
-                </div>
-                <!-- <div class="col-lg-6">
+        <!-- <div class="my-auto mx-auto"> -->
+
+        <!-- The expanding image container -->
+        <!-- <div class="container"> -->
+        <!-- Close the image -->
+        <!-- <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span> -->
+
+        <!-- Expanded image -->
+        <!-- <img class="expandedImg" src="researchAssets/psi_curate4.JPG" id="expandedImg"> -->
+
+        <!-- Image text -->
+        <!-- <div id="imgtext"></div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- Photo Grid -->
+
+    </div>
+    <!-- </div> -->
+    <hr>
+    <div class="row row-space my-auto">
+        <!-- <div class="col-sm-1 col-lg-3"></div> -->
+        <div class="col-12">
+            <div class="col-lg-6">
+                <h3 class="display-4">DMS 2022</h3>
+                <img src="researchAssets/DMS_Poster-02.jpg" style="width: 100%;">
+                <a href="researchAssets/DMS_Poster-02.jpg" class="btn btn-primary">View in Own Window</a>
+            </div>
+            <!-- <div class="col-lg-6">
                 </div> -->
-                <div class="col-lg-6">
-                    <h3 class="display-4">DMS 2022</h3>
-                    <img src="researchAssets/DMS_Poster-02.jpg" style="width: 100%;">
-                </div>
-                <!-- <div class="col-lg-6">
-                </div> -->
-                <!-- <div class="row row-space my-auto">
+            <!-- <div class="row row-space my-auto">
                     <h3>ACS 2021</h3>
                     <div class="col-sm-1 col-lg-3"></div>
 
                     <iframe src="https://drive.google.com/file/d/1iAvwa5xQfm2M8HdC4BKmx3Od0DReAVpu/preview" width="640"
                         height="480"></iframe>
                 </div> -->
-            </div>
-            <div class="col-sm-1 col-lg-3"></div>
-
         </div>
+        <div class="col-sm-1 col-lg-3"></div>
+
+    </div>
     </div>
 
 
 
 
     <script>
-        function myFunction(imgs) {
+        function ImageZoomed(imgs) {
             // Get the expanded image
             var expandImg = document.getElementById("expandedImg");
             // Get the image text
@@ -178,11 +166,6 @@
         } 
     </script>
 
-    <p>
-        New features in the near future including a simple skinning of landmark anatomy point clouds to
-        declutter the visual field while working. The current prototype code for this uses the basic Marching
-        Cubes Algorithm.
-    </p>
     <!--- Footer -->
     <div class="container-fluid bg-tertiary" id="footer"></div>
 

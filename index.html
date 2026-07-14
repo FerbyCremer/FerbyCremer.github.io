@@ -24,7 +24,11 @@
 
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
+    <script src="js/d3.min.js"></script>
+
     <script src="js/universal.js"></script>
+
+    
 
     <link rel="stylesheet" href="style.css">
 
@@ -37,69 +41,53 @@
 
     <div class="container-fluid bg-light">
         <br>
+        <div class="row row-space">
+            <div class="col-sm-12" id="nameTag">
+                <h1 class="text-dark text-center">Jennifer "Ferby" Cremer</h1>
+            </div>
+        </div>
         <!-- About Me / Home -->
-        <div class="row row-space my-auto">
-            <div class="col-sm-1 col-lg-3"></div>
-
+        <div class="row  row-no-gutters">
+            <div class="col-sm-1"></div>
             <!-- Headshot -->
-            <div class="col-sm-4 col-lg-2">
-                <img class="img-center img-thumbnail rounded-circle mx-auto d-block" src="images/headshot_temp.jpg"
+            <div class="col-sm-4">
+                <img class="img-center img-thumbnail rounded-circle mx-auto my-auto d-block" src="images/headshot_temp.jpg"
                     style="margin-top: 10px; margin-bottom: 10px">
             </div>
 
             <!-- Text by photo -->
-            <div class="col-sm-6 col-lg-4 my-auto mx-auto">
-                <h1 class="text-dark text-left">Jennifer "Ferby" Cremer</h1>
-                <h2 class="text-dark text-left">The Human:</h2>
-                <p class="text-dark text-left">I am a PhD candidate in Computer Science - Graphics and Visualization at
-                    the University of Florida.
-                    I work in <a href="https://www.cise.ufl.edu/research/SurfLab/">SurfLab</a> under the supervision of
-                    <a href="https://www.cise.ufl.edu/~jorg/">Dr.Jorg Peters</a>.
+            <div class="col-sm-6">
+                <!-- <h2 class="text-dark text-left">The Human:</h2> -->
+                <p class="text-dark text-left">I am a Computer Science PhD from the University of Florida, with special interests in visualization and human-computer interactions.
+                    I worked in <a href="https://www.cise.ufl.edu/research/SurfLab/">SurfLab</a> under the supervision of
+                    <a href="https://www.cise.ufl.edu/~jorg/">Dr.Jorg Peters</a> to construct fast, accurate volumetric representations of medical images and 
+                    collaborated with
+                    <a href="https://www.cise.ufl.edu/~eragan/indie.html">Dr.Eric Ragan</a> as part of the INDIE lab for guidance on the HCI aspects of my thesis.
 
-                    My work focuses on human perception of complex 3D data (specifically medical imagery)
-                    in
-                    virtual reality,
-                    to both enhance spatial reasoning about the given structures and provide fast yet accurate
-                    representations without specialized software training.
-                </p>
-
-                <p class="text-dark text-left">For this multi-disciplinary project
-                    <a href="https://www.cise.ufl.edu/~eragan/indie.html">Dr.Eric Ragan</a>
-                    is the co-chair for my committee and key advisor for the user studies of the project.
+                    This work focused on human perception of complex 3D data in virtual reality to both enhance spatial reasoning of anatomical structures and provide an interface novice users could use to curate the data without having to take a training course.
                 </p>
             </div>
 
-            <div class="col-sm-1 col-lg-3"></div>
+            <div class="col-sm-1"></div>
         </div>
         <!-- Text under photo -->
-        <div class="row row-space my-auto">
+        <div class="row  row-no-gutters">
+            <div class="col-sm-1"></div>
 
-            <div class="col-sm-10 col-lg-6 my-auto mx-auto">
-                <p class="text-dark text-left">I have also been a part of the <a
-                        href="https://www.aswf.io/diversity/">Academy Software Foundation's (ASWF) D&I Working
-                        Group</a> since 2020; particularly involved with the <a
-                        href="https://wiki.aswf.io/pages/viewpage.action?spaceKey=DIWG&title=Summer+Learning+Program">Summer
-                        Learning Program</a>.
+            <div class="col-sm-10">
+                <p class="text-dark text-left">Throughout my time in graduate school I mentored students across the university spectrum as a teaching assistant, often under <a href="jeremiahblanchard.org">Dr. Jeremiah Blanchard</a>.
+                    Outside the classroom,  mentored 12 undergraduates within SurfLab as they explored the research side of computer science.
+                    <!-- I worked as a teaching assistant for courses at all levels, from fundamentals to Lead TA of Operating Systems with  graphics electives at both the undergraduate and graduate levels. -->
+                    I had the opportunity to solo teach undergraduate electives---Design Patterns for Object-Oriented Programming and Performant Programming in Python.
+                </p>
+                
+                <p class="text-dark text-left">Outside of academia, I have been a part of the <a href="https://www.aswf.io/diversity/">Academy Software Foundation's (ASWF) D&I Working Group</a> since 2020; 
+                    particularly involved with the <a href="https://wiki.aswf.io/pages/viewpage.action?spaceKey=DIWG&title=Summer+Learning+Program">Summer Learning Program</a>.
                 </p>
 
-                <p class="text-dark text-left">I spent the first few years of graduate school experimenting with
-                    teaching.
-                    I had the opportunity to teach undergraduate electives -- Design Patterns for
-                    Object-oriented Programming, Performant Programming in Python --
-                    and work under the direction of <a href="jeremiahblanchard.org">Dr. Jeremiah Blanchard</a> as the
-                    Lead TA
-                    for Operating Systems.
-                </p>
-
-                <p class="text-dark text-left">Since being awarded the Research in Robotic Technology Grant - Research
-                    Foundation of the ASCRS in the Summer of 2021,
-                    I was able to step back from teaching for a while to solely focus on my thesis project
-                    and get back into some of my rejuvenating hobbies like wildlife photography, painting, and go for
-                    adventures.
+                <p class="text-dark text-left">To balance out the screen time and problem solving I ground myself in with my artistic roots, partaking in hobbies like wildlife photography and miniature painting, or go for unscripted adventures and let the mind wander.
                     Check out the <a href="fun.html">Hobbies</a> page to see more.
-                    I often reflect on the interfaces I encounter in my artistic activities when designing feature sets
-                    or
-                    communicating ideas to my advisors.
+                    These creative and whimsical outlets then give me a wide range of interfaces and experiences that often influence how I design system features and strengthen my communication through collaborations.
                 </p>
 
                 <!-- <p class="text-dark text-left"> I graduated in Spring 2018 from the University of Florida with a
@@ -107,116 +95,39 @@
                     through electives such as Fluid Mechanics and Thermodynamics.</p>
                 <br> -->
             </div>
+            <div class="col-sm-1"></div>
+
         </div>
 
         <!-- Publication List -->
         <div class="row row-space">
-
-            <div class="col-sm-10 col-lg-6 mx-auto" id="Pubs">
-                <!-- <div class="col-lg-6 " id="DC"> -->
-                <h3 class="text-dark text-center">Publications</h3>
-                <hr>
-                <p class="text-dark text-center">
-                    <a href=https://scholar.google.com/citations?user=sxzGkrMAAAAJ&hl=en>Google Scholar</a>
-                </p>
-                <p><span class="small text-dark align-text-top "><b>[Conference Paper] </b></span></p>
-                <p class="text-dark text-left"><b>Cremer, J., </b> Lausch, C., Peters, J., and Ragan, E.
-                    <a href=https://www.cise.ufl.edu/~eragan/papers/Cremer2025.pdf>(accepted, 2025). Empirical Study of Virtual Reality and Desktop Systems for Qualitative Editing of 3D Meshes: Impacts of Expertise and Context</a>
-                    ACM Symposium on Virtual Reality Software and Technology (VRST). p 1-10.
-                    <!--- <a class="small" href="https://ieeexplore.ieee.org/abstract/document/10536316">(Link)</a> --->
-                    <a class="small" data-toggle="collapse" href="#t1" role="button" aria-expanded="false"
-                        aria-controls="t1">(View Abstract)</a>
-                </p>
-                <div id="t1" class="collapse">
-                    <div class="card card-body">
-                        For editing 3D spatial data, 3D interaction through virtual reality (VR) can be a viable alternative to 2D interfaces: research indicates that model editing in VR provides a more enjoyable experience and 
-                        is fast to learn. These advantages make VR an appealing option for training new users’ spatial understanding before transitioning to standard 2D tools, like Blender and Maya. But how much does model 
-                        editing in VR benefit the trained user? Our experiment compares the modeling accuracy of non-modelers, casual users, and formally trained artists for objects of varying complexity in desktop and 
-                        VR. For users with no prior modeling experience, the study found significant improvements in qualitative accuracy and efficiency of aesthetic edits using VR. Importantly, improvements decreased with 
-                        higher user experience and varied with types of editing for different surface features. The findings suggest that adaptation of traditional desktop modeling tools to VR should be situational decisions based 
-                        on specific modeling scenarios.
-                    </div>
-                </div>
-                <p><span class="small text-dark align-text-top "><b>[Poster] </b></span></p>
-                <p class="text-dark text-left"><b>Cremer, J.,</b> Lausch, C., Peters, J., Terracina, K., and Ragan, E.
-                    <a href=https://www.cise.ufl.edu/~eragan/papers/Cremer_VRST_radiology2025.pdf>Improving Radiology Communications and Patient Trust with Virtual Reality.</a>
-                    ACM Symposium on Virtual Reality Software and Technology (VRST). Poster extended abstract. p 1-2.
-                    <a class="small" data-toggle="collapse" href="#t1" role="button" aria-expanded="false"
-                        aria-controls="t1">(View Abstract)</a>
-                </p>
-                <div id="t1" class="collapse">
-                    <div class="card card-body">
-                        Interpreting 3D information based on 2D slices of the data is notoriously difficult. Yet in the medical field makes intervention choices
-based on radiological scans on a daily basis. Volumetric reconstructions of these data sets, via voxel clouds and surface meshes
-can reduce the cognitive complexity of this task. However, creating
-these reconstructions requires extensive software training and time,
-often on the part of a technician separate from the treatment team.
-To shorten this process, we present a system designed for radiologists and surgeons on the care team. We integrate tools familiar
-to these experts and provide a stereoscopic environment for quick
-spatial comprehension and intuitive data curation. Based on the
-feedback from oncology collaborators on the system in its current
-state, it is not only helpful for communicating tumor progression
-but, additionally shows promise as a teaching tool to assist with
-building skills for traditional interpretation of radiology images.
-                    </div>
-                </div>
-                <p><span class="small text-dark align-text-top "><b>[Poster] </b></span></p>
-                <p class="text-dark text-left">Benda, B., <b></b>Cremer, J.,</b> Fang-Wu, J., and Ragan, E.
-                    <a href=https://www.cise.ufl.edu/~eragan/papers/Benda_VRST2025.pdf> Detection of Translation Gain is Decreased When Virtual Reality Users Are Unaware of Its Presence.</a>
-                    ACM Symposium on Virtual Reality Software and Technology (VRST). Poster extended abstract. p 1-2.
-                    <a class="small" data-toggle="collapse" href="#t1" role="button" aria-expanded="false"
-                        aria-controls="t1">(View Abstract)</a>
-                </p>
-                <div id="t1" class="collapse">
-                    <div class="card card-body">
-                        The prevalent evaluation methods used to estimate detection of
-redirected walking are based on methods from psychophysics that
-require users to know their virtual movements are being manipulated. However, this higher-than-normal level of attention toward
-their movements yields conservative detection thresholds. We find
-that participants who were unaware that redirected walking (translation gain) was applied detected the technique at a significantly
-higher gain than users who were aware (at gains of 1.73 and 1.38,
-respectively). We provide evidence that redirected walking-based
-navigation solutions may be able to leverage gain values that are
-larger than the current threshold guidelines would suggest.
-                    </div>
-                </div>
-                <p><span class="small text-dark align-text-top "><b>[Doctoral Consortium] </b></span></p>
-                <p class="text-dark text-left"><b>Jennifer Cieliesz Cremer.</b>
-                    <a href="researchAssets/IEEE_VR_DC_2024.pdf">Scan2Twin: Virtual Reality for Enhanced Anatomical
-                        Investigation.</a>
-                    IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR 2024) Doctoral Consortium.
-                    <a class="small" href="https://ieeexplore.ieee.org/abstract/document/10536316">(Link)</a>
-                    <a class="small" data-toggle="collapse" href="#t1" role="button" aria-expanded="false"
-                        aria-controls="t1">(View Abstract)</a>
-                </p>
-                <div id="t1" class="collapse">
-                    <div class="card card-body">
-                        Interpreting 3D information from 2D slices of data points is a notoriously difficult process,
-                        especially in the medical field with its use of scan imaging. This dissertation aims to apply
-                        and assess the advantages of virtual reality (VR) for exploring volumetric visualization of
-                        medical images
-                        and enabling the efficient generation of explicit, unambiguous surface models.
-                        I will evaluate the effects of stereoscopic viewing on different methods of volumetric data
-                        visualizations,
-                        experiment with tool development to increase 3D modeling accessibility,
-                        and an expert review of the overall system design we refer to as Scan2Twin.
-                    </div>
-                </div>
-                <!-- </div> -->
+            <br>
+            <div class="col-sm-12" id="Pubs">
+                <h2 class="text-dark text-center">Publications</h2>
             </div>
+        </div>
+        <div class="row row-space">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10" id="pubArea">
+                <script src="js/pubs.js"></script>
+                <!-- <div class="col-lg-6 " id="DC"> -->
+                    
+                    <!-- </div> -->
+            </div>
+            <div class="col-sm-1"></div>
 
             <!-- Resume Section -->
             <!-- <div class="row row-space my-auto"> -->
             <!-- <div class="col-sm-1 col-lg-3"></div> -->
             <!-- <div class="row row-space my-auto text-center padding"> -->
-            <div class="col-sm-10 col-lg-6 mx-auto">
+            <!-- <div class="col-sm-10 col-lg-4">
                 <h2 class="text-dark text-center">Research Resume:</h2>
                 <hr>
                 <iframe src="files/Resume.pdf" width=100% height="900px"></iframe>
                 <br>
                 <a href="files/Resume.pdf" class="btn btn-primary">View in Own
                     Window</a>
-            </div>
+            </div> -->
         </div>
     </div>
     </div>

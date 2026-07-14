@@ -10,8 +10,9 @@ Promise.all([d3.csv("./files/pubs.csv")]).then(
   counter = 0;
   for(var i=0; i<json.length; i++){
 
-    json[i].Authors = json[i].Authors.replace('William Benda', '<b>William Benda</b>')
-    json[i].Authors = json[i].Authors.replace('Brett Benda', '<b>Brett Benda</b>')
+    json[i].Authors = json[i].Authors.replace('Jennifer Cremer', '<b>Jennifer Cremer</b>')
+    json[i].Authors = json[i].Authors.replace('Ferby Cremer', '<b>Jennifer Cremer</b>')
+    json[i].Authors = json[i].Authors.replace('Cremer, J', '<b>Cremer, J</b>')
     json[i].VenueType = (json[i].VenueType=="") ? "Misc.":json[i].VenueType;
     
     if(year!=json[i].Section){
@@ -33,7 +34,7 @@ Promise.all([d3.csv("./files/pubs.csv")]).then(
 
     //title with link to PDF
     if(json[i].PDFName!="" & json[i].HidePDF=="0")
-    	innerHTML += "<b>"+"<a href=\"./files/" + json[i].PDFName +"\">"+json[i].Title+". </a></b>"
+    	innerHTML += "<b>"+"<a href=\"./files/publications/" + json[i].PDFName +"\">"+json[i].Title+". </a></b>"
     else{
     	innerHTML += "<b>"+json[i].Title+". </b>"
     }
