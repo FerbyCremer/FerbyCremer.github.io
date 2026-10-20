@@ -41,116 +41,87 @@
         <div class="row row-space my-auto welcome text-center">
             <div class="col-12">
                 <h1 class="display-4">Doctoral Thesis: Scan2Twin</h1>
+                <hr>
+                <p class="lead">
+                    This project is a cross-platform VR application meant to bring state-of-the-art reconstruction
+                    technology to non-specialist physicians.
+                    By using stereoscopic rendering, natural navigation techniques, and proprioception-enhanced
+                    memory -
+                    it allows clinicians to tweak and tune rapid prototype models created with the assitance of a
+                    intuitive segmentation interactions,
+                    without the need for time-consuming requests of uniquely trained engineers to perform the
+                    alterations.
+                    While orginally developed as a stand-alone C++/OpenGL software, it was later converted to leverage <b>Unity</b> as the OpenXR API and associated dependencies rapidly matured during the project's formative years.
+                </p>
             </div>
-            <hr>
-            <div class="row row-space">
-                <div class="col-sm-12 col-lg-6">
-                    <p class="lead">
-                        This project is a cross-platform VR application meant to bring state-of-the-art reconstruction
-                        technology to non-specialist physicians.
-                        By using stereoscopic rendering, natural navigation techniques, and proprioception-enhanced
-                        memory -
-                        it allows clinicians to tweak and tune rapid prototype models created with the assitance of a
-                        segmentation algorithm module,
-                        without the need for time-consuming requests of uniquely trained engineers to perform the
-                        alterations.
-                    </p>
-                    <p>
-                        While orginally invisioned as a stand-alone piece of software, SurfLab has since converted the
-                        software to work using the power of the <b>Unity3D engine and OpenXR APIs</b>.
-                        In addition to the central code we have also started the instantiation of an accompanying Python
-                        script, to be used in conjunction with Blender, to rig the blood vessel and tumor models with
-                        appropriate spring constraints.
-                        These rigged models are then used in another one of our lab's projects,
-                        <a href="https://www.cise.ufl.edu/research/SurfLab/TIPS/index.php">TIPS</a>,
-                        which is seen in proof-of-concept at the end of the embedded demo of the below presentation.
-                    </p>
-                </div>
-                <div class="col-sm-12 col-lg-6">
-                    <!-- The expanding image container -->
-                    <div class="container">
-                        <!-- Close the image -->
-                        <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span>
-
-                        <!-- Expanded image -->
-                        <img class="expandedImg" src="researchAssets/psi_curate4.JPG" id="expandedImg">
-
-                        <!-- Image text -->
-                        <div id="imgtext"></div>
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="row">
-                        <img src="researchAssets/Annotated_UIv2.png" onclick="ImageZoomed(this);">
-
-                        <img src="researchAssets/psi_curate4.JPG" onclick="ImageZoomed(this);">
-
-                        <img src="researchAssets/psi_voxel3.png" onclick="ImageZoomed(this);">
-
-                        <img src="researchAssets/psi_curate6.JPG" onclick="ImageZoomed(this);">
-
-                        <img src="researchAssets/OculusScreenshot1688050760.jpeg" onclick="ImageZoomed(this);">
-
-                        <img src="researchAssets/ComprehensiveVRUI.jpeg" onclick="ImageZoomed(this);">
-
-                        <img src="researchAssets/MeshProgression.gif" onclick="ImageZoomed(this);">
-
-                        <!-- <img src="researchAssets/SofaStill.jpg" onclick="ImageZoomed(this);"> -->
-                    </div>
         </div>
-        <div class="row">
-            <div class="column" id="CompositVideo">
+        <div class="row row-space my-auto">
+            <div class="col-sm-12 col-lg-6">
+                <img src="researchAssets/Annotated_UIv2.png"  style="width: 100%; object-position: center; object-fit: scale-down; max-height: 45vh;">
+                <p>
+                    The desktop portion of the interface designs specifically incorporate elements of existing radiology software to lower the learning curve and increase user trust.
+                    The desktop is used to define a rough regions of interest using a series of keyframes to map changes in a given structure's center of mass.
+                    A preview of the generated voxel clouds is provided for initial verifications of tissue captures, before any curation is performed in the VR environment.
+                </p>
+            </div>
+            <div class="col-sm-12 col-lg-6">
+                <img src="researchAssets/ComprehensiveVRUI.jpeg"  style="width: 100%; object-position: center; object-fit: scale-down;max-height: 45vh;">
+                <p>
+                    The VR environment was informed by minimizing tool fatigue and maximizing the user's attention on the visualization for interaction.
+                    Tool menus, tool states, and extent of tool actions were all limited to what could be reasonably contained across two small radial menus, one for global actions and one for the active tool.
+                    A tabulated pallet was also attatched to the non-dominant hand for direct data interactions such as overlaying the scan images atop the voxel clouds and toggling cloud transparencies.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid center padding" >
+         <div class="row row-space my-auto">
+             <div class="col-sm-12 col-lg-6">
+                <!-- <div class="container-fluid center padding"> -->
+                <h3 class="display-5">Additional Project Stills</h3>
+                 <!-- The expanding image container -->
+                 <div class="container">
+                     <!-- Expanded image -->
+                     <img class="expandedImg" src="researchAssets/psi_curate4.JPG" id="expandedImg">
+                     <!-- Image text -->
+                     <p id="imgtext">curation including isolated colon and bladder mesh overlaid on scan images</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-6" id="CompositVideo">
                 <h2 class="display-5">Project Highlight from Video Abstract for ASCRS</h2>
                 <video width="720" controls>
                     <source src="researchAssets/VideoAbstract.mp4" type="video/mp4">
                     Your browser does not support HTML video.
                 </video>
             </div>
-            <!-- <div class="column">
-                <h3 class="display-5">Project Stills</h3> -->
-        <!-- </div> -->
-        <!-- <div class="my-auto mx-auto"> -->
-
-        <!-- The expanding image container -->
-        <!-- <div class="container"> -->
-        <!-- Close the image -->
-        <!-- <span onclick="this.parentElement.style.display='block'" class="closebtn">&times;</span> -->
-
-        <!-- Expanded image -->
-        <!-- <img class="expandedImg" src="researchAssets/psi_curate4.JPG" id="expandedImg"> -->
-
-        <!-- Image text -->
-        <!-- <div id="imgtext"></div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- Photo Grid -->
-
-    </div>
-    </div>
-    <hr>
-    <div class="row row-space my-auto">
-        <!-- <div class="col-sm-1 col-lg-3"></div> -->
-        <div class="col-12">
-            <div class="col-lg-6">
-                <h3 class="display-4">DMS 2022</h3>
-                <img src="researchAssets/DMS_Poster-02.jpg" style="width: 100%;">
-                <a href="researchAssets/DMS_Poster-02.jpg" class="btn btn-primary">View in Own Window</a>
-            </div>
-            <!-- <div class="col-lg-6">
-                </div> -->
-            <!-- <div class="row row-space my-auto">
-                    <h3>ACS 2021</h3>
-                    <div class="col-sm-1 col-lg-3"></div>
-
-                    <iframe src="https://drive.google.com/file/d/1iAvwa5xQfm2M8HdC4BKmx3Od0DReAVpu/preview" width="640"
-                        height="480"></iframe>
-                </div> -->
         </div>
-        <div class="col-sm-1 col-lg-3"></div>
+    </div>
+        <div class="row row-space my-auto">
+            <img class="img-thumbnail" src="researchAssets/psi_curate4.JPG" onclick="ImageZoomed(this);" alt="curation including isolated colon and bladder mesh overlaid on scan images">
+            
+            <img class="img-thumbnail" src="researchAssets/psi_voxel3.png" onclick="ImageZoomed(this);" alt="Cleaned soft tissue voxel cloud with noisy pelvis">
+            
+            <img class="img-thumbnail" src="researchAssets/psi_curate6.JPG" onclick="ImageZoomed(this);" alt ="mesh and vessel curves overlaid on scan images">
+            
+            <img class="img-thumbnail" src="researchAssets/OculusScreenshot1688050760.jpeg" onclick="ImageZoomed(this);" alt="early image of colon voxels and tumor mesh with texture">
+            
+            <img class="img-thumbnail" src="researchAssets/MeshProgression.gif" onclick="ImageZoomed(this);" alt="animated progression of automated mesh fitting">
+        </div>
+        <hr>
+        <div class="row row-space my-auto">
+            <!-- <div class="col-sm-1 col-lg-3"></div> -->
+            <div class="col-12">
+                <div class="col-lg-6">
+                    <h3 class="display-5">DMS 2022</h3>
+                    <img src="researchAssets/DMS_Poster-02.jpg" style="width: 100%;">
+                    <a href="researchAssets/DMS_Poster-02.jpg" class="btn btn-primary">View in Own Window</a>
+                </div>
+            </div>
+            <div class="col-sm-1 col-lg-3"></div>
+            
+        </div>
 
-    </div>
-    </div>
+
 
 
 
